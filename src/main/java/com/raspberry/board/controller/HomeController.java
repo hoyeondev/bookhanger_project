@@ -22,7 +22,7 @@ public class HomeController {
     public String home(){
         //log.info("home()");
         log.info("home()");
-        return "home2";
+        return "home";
     }
 
     @GetMapping("joinForm")
