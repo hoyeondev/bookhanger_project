@@ -1,125 +1,145 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Join</title>
-    <script src="js/jquery-3.7.0.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        $(function(){
-            //메시지 출력
-            let m = "${msg}";
-            if(m != ""){
-                alert(m);
-            }
-        });
-    </script>
-</head>
-<body>
-<div class="wrap">
-    <header>
-        <jsp:include page="header.jsp"></jsp:include>
-    </header>
-    <section>
-        <div class="content">
-          <form action="joinProc" method="post"
-                class="login-form" name="jForm"
-                onsubmit="return check()">
-              <h2 class="login-header">회원 가입</h2>
-              <input type="text" class="login-input" id="mid"
-                     name="m_id" title="아이디" autofocus
-                     placeholder="아이디">
-              <input type="button" class="idcheck-btn"
-                     value="중복확인" onclick="idcheck()">
-              <input type="password" class="login-input"
-                     name="m_pwd" title="비밀번호"
-                     placeholder="비밀번호">
-              <input type="text" class="login-input"
-                     name="m_name" title="이름"
-                     placeholder="이름">
-              <input type="text" class="login-input"
-                     name="m_birth" title="생일"
-                     placeholder="생일">
-              <input type="text" class="login-input"
-                     name="m_addr" title="주소"
-                     placeholder="주소">
-              <input type="text" class="login-input"
-                     name="m_phone" title="연락처"
-                     placeholder="연락처">
-              <input type="submit" class="login-btn"
-                     value="가입">
-          </form>
-      </div>
-  </section>
-  <footer>
-    <jsp:include page="footer.jsp"></jsp:include>
-  </footer>
+
+<jsp:include page="header2.jsp"></jsp:include>
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('bootstrap/assets/img/home-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>회원가입</h1>
+<%--                    <span class="subheading">작은 글씨</span>--%>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+
+    <div class="row justify-content-center mt-4 mb-4 mx-0">
+        <div class="col-xl-4 col-lg-6">
+            <div class="card shadow-none">
+                <div class="card-body p-sm-6">
+                    <div class="text-center mb-4">
+                        <h4 class="mb-1">Sign In</h4>
+                        <p>Sign in to your account to continue.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="mb-3">
+                                <label class="mb-2 fw-500">Email<span class="text-danger ms-1">*</span></label>
+                                <input class="form-control ms-0" type="email" placeholder="Enter your Email">
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="mb-3">
+                                <label class="mb-2 fw-500">Password<span class="text-danger ms-1">*</span></label>
+                                <div>
+                                    <input type="password" class="form-control" id="input-password" placeholder="Password">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12">
+                            <div class="d-flex mb-3">
+                                <div class="form-check d-flex align-items-center">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label tx-15" for="flexCheckDefault">
+                                        Remember me
+                                    </label>
+                                </div>
+                                <div class="ms-auto">
+                                    <a href="forgot-password.html" class="tx-primary ms-1 tx-13">Forgot Password?</a>
+                                </div>
+                            </div>
+                            <div class="d-grid mb-3">
+                                <a href="index.html" class="btn btn-primary"> Login</a>
+                            </div>
+                            <div class="text-center">
+                                <p class="mb-0 tx-14">Don't have an account yet?
+                                    <a href="register.html" class="tx-primary ms-1 text-decoration-underline">Sign Up</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-center mt-3 mb-2">Signin with</p>
+                    <div class="d-flex justify-content-center">
+                        <div class="btn-list">
+                            <button class="btn btn-icon bg-primary-transparent rounded-pill border-0" type="button">
+                                <span class="btn-inner--icon"><i class="fa fa-facebook-f"></i></span>
+                            </button>
+                            <button class="btn btn-icon bg-primary-transparent rounded-pill border-0" type="button">
+                                <span class="btn-inner--icon"><i class="fa fa-google"></i></span>
+                            </button>
+                            <button class="btn btn-icon bg-primary-transparent rounded-pill border-0" type="button">
+                                <span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
+                            </button>
+                            <button class="btn btn-icon bg-primary-transparent rounded-pill border-0" type="button">
+                                <span class="btn-inner--icon"><i class="fa fa-linkedin"></i></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- Footer-->
+<footer class="border-top">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#!">
+                                    <span class="fa-stack fa-lg">
+                                        <i class="fas fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                    </span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2023</div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="bootstrap/js/scripts.js"></script>
 </body>
 <script>
-    //아이디 중복 체크
-    let ck = false;//false일 경우 중복체크를 안했거나 중복된
-                    //아이디를 입력한 상태.
-    function idcheck() {
-        let id = $("#mid").val();
-
-        //id 값을 입력했는지 검사.
-        if(id == ""){//입력을 안했을 경우
-            alert("아이디를 입력하세요.");
-            $("#mid").focus();
-            return;
-        }
-        //전송할 데이터 작성.
-        let sendId = {"mid": id};
-        console.log(sendId);
-
-        //서버로 id 전송.
-        $.ajax({
-            url: "idCheck",
-            type: "get",
-            data: sendId,
-            success: function (res){
-                if(res == "ok"){
-                    alert("사용가능한 아이디입니다.");
-                    ck = true;
-                } else {
-                    alert("사용할 수 없는 아이디입니다.");
-                    $("#mid").val("");
-                    $("#mid").focus();
-                    ck = false;
-                }
-            },
-            error: function (err) {
-                console.log(err);
-                ck = false;
-            }
-        });
-    }//idcheck end
-
-    //중복확인이 되었고, 모든 입력이 된 다음에 전송하도록
-    //하는 함수 check() (+ onsubmit 속성)
-    function check() {
-        //아이디 중복확인이 되었는가?
-        if(ck == false){
-            alert("아이디 중복 확인을 해주세요.");
-            return false;//submit 중지!(전송 안됨)
-        }
-
-        //form 태그의 내용 확인(누락된 부분)
-        const jfrm = document.jForm;//js에서 form 태그를
-                                    //통째로 가져오는 형식.
-        console.log(jfrm);
-
-        let length = jfrm.length - 1;//submit 제외
-
-        for(let i = 0; i < length; i++){
-            if(jfrm[i].value == "" || jfrm[i].value == null){
-                alert(jfrm[i].title + " 입력!");
-                jfrm[i].focus();
-                return false;
+    $(document).ready(function() {
+        console.log('terst');
+        // 현재 페이지의 경로 가져오기
+        const pathname = window.location.pathname;
+        console.log(pathname);
+        // 'joinForm2'가 경로에 포함되면 #login_badge 숨기기
+        if (pathname.includes("joinForm")) {
+            $("#login_badge").removeClass('d-flex').addClass('d-none');
+        }else{
+            if ($("#login_badge").hasClass("d-none")) {
+                $("#login_badge").removeClass("d-none").addClass("d-flex");
             }
         }
-
-        return true;
-    }
+    });
 </script>
 </html>

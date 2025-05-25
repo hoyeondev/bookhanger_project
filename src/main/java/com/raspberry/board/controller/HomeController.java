@@ -3,7 +3,6 @@ package com.raspberry.board.controller;
 import com.raspberry.board.dto.MemberDto;
 import com.raspberry.board.service.MemberService;
 import jakarta.servlet.http.HttpSession;
-import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

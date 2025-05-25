@@ -16,7 +16,7 @@
 
       <!-- 로그인/회원가입 뱃지 -->
       <div id="login_badge" class="d-flex align-items-center ms-3">
-        <a href="joinForm2" class="badge bg-dark text-white rounded-pill me-3">회원가입</a>
+        <a href="joinForm" class="badge bg-dark text-white rounded-pill me-3">회원가입</a>
         <a href="loginForm" class="badge bg-white text-dark rounded-pill">로그인</a>
       </div>
     </div>
@@ -34,6 +34,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link rel="stylesheet" href="bootstrap/css/styles.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 </head>
 <body>
 
