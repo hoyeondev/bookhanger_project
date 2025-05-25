@@ -8,8 +8,8 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1>북로거와 함께</h1>
-                    <span class="subheading">읽을수록 커지는 세상</span>
+                    <h1>북로거와 함께 22222</h1>
+                    <span class="subheading">뭐예요우오오오옹ㅇ</span>
                 </div>
             </div>
         </div>
@@ -118,4 +118,16 @@
 <!-- Core theme JS-->
 <script src="bootstrap/js/scripts.js"></script>
 </body>
+<%--<script>--%>
+<%--    $(document).ready(function() {--%>
+<%--        console.log('terst');--%>
+<%--        // 현재 페이지의 경로 가져오기--%>
+<%--        const pathname = window.location.pathname;--%>
+<%--        console.log(pathname);--%>
+<%--        // 'joinForm2'가 경로에 포함되면 #login_badge 숨기기--%>
+<%--        if (pathname.includes("joinForm2")) {--%>
+<%--            $("#login_badge").hide();--%>
+<%--        }--%>
+<%--    });--%>
+<%--</script>--%>
 </html>
