@@ -8,7 +8,7 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1>북로거와 함께</h1>
+                    <h1>책걸이와 함께</h1>
                     <span class="subheading">읽을수록 커지는 세상</span>
                 </div>
             </div>
