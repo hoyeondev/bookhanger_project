@@ -1,7 +1,19 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
-
+<script>
+    $(function(){
+        //메시지 출력 부분
+        let m = "${msg}";
+        if(m != ""){
+            alert(m);
+        }
+    });
+</script>
 <jsp:include page="header2.jsp"></jsp:include>
+
+
 <!-- Page Header-->
 <header class="masthead" style="background-image: url('bootstrap/assets/img/home-bg.jpg')">
     <div class="container position-relative px-4 px-lg-5">
