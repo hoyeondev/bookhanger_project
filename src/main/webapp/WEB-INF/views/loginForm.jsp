@@ -43,10 +43,7 @@
                             <div class="col-sm-12">
                                 <div class="mb-3">
                                     <label class="mb-2 fw-500">아이디<span class="text-danger ms-1">*</span></label>
-                                    <div class="d-flex gap-2">
-                                        <input id="mid" name="m_id" class="form-control" type="text" placeholder="아이디를 입력하세요." autofocus>
-                                        <input type="button" id="id_check" class="btn btn-outline-secondary btn-sm px-2 py-0" value="중복확인" onclick="idcheck()">
-                                    </div>
+                                    <input id="mid" name="m_id" class="form-control" type="text" placeholder="아이디를 입력하세요." autofocus>
                                 </div>
                             </div>
                         </div>
@@ -64,12 +61,12 @@
                                 <div class="d-flex mb-3">
                                     <div class="form-check d-flex align-items-center">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label fs-6 mt-1 ms-2" for="flexCheckDefault">
+                                        <label class="form-check-label fs-6 mt-2 ms-2" for="flexCheckDefault">
                                             로그인정보 저장
                                         </label>
                                     </div>
-                                    <div class="ms-auto">
-                                        <a href="forgot-password.html" class="tx-primary ms-1 tx-13">Forgot Password?</a>
+                                    <div class="ms-auto mt-2">
+                                        <a href="forgot-password.html" class="tx-primary ms-1 fs-6 tx-13">비밀번호 찾기</a>
                                     </div>
                                 </div>
                                 <div class="d-grid mb-3 mt-3">
