@@ -153,12 +153,13 @@
         if (pathname.includes("loginForm")) {
             $("#login_badge").removeClass('d-flex').addClass('d-none');
             $("#nav-menu").hide();
-        }else{
+        } else {
             $("#nav-menu").show();
             if ($("#login_badge").hasClass("d-none")) {
                 $("#login_badge").removeClass("d-none").addClass("d-flex");
             }
         }
+    });
 
 </script>
 </html>
